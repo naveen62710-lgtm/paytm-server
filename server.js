@@ -9,7 +9,7 @@ app.use(express.json())
 
 const MID = process.env.PAYTM_MID
 const MERCHANT_KEY = process.env.PAYTM_KEY
-const BASE_URL = "https://securegw.paytm.in"  // ✅ production URL
+const BASE_URL = "https://secure.paytmpayments.com"  // ✅ correct production URL  
 
 app.get("/", (req, res) => {
     res.json({ success: true, message: "Paytm Server Running" })
